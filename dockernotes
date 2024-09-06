@@ -1,1 +1,29 @@
-Hi this is docker practice notes
+sudo yum install -y docker
+systemctl start docker
+systemctl enable docker
+usermod -aG docker ec2-user ==> logout and login after this all docker commands should work in "ec2-user"
+
+sudo yum install git -yum
+
+docker pull nginx ==> it will download the latest version image
+
+docker pull nginx:1.26.2-otel ==> to download the specific version/tag
+
+dockerhub.com
+
+docker images
+
+docker images -a -q ==> to see all docker images
+
+docker rmi `docker images -a -q` ==> to delete the all docker images
+
+docker create nginx:latest ==> to create the container
+
+docker start CONTAINER ID ==> to start the container
+
+docker ps -a ==> to see all containers
+
+docker exec -it 80555cba63f0 bash ==> to login to the container
+
+
+
