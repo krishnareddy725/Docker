@@ -1,4 +1,4 @@
 FROM almalinux:8
 RUN yum install -y nginx
-ADD dwsample1-tar.tar /tmp/
-CMD ["nginx", "-g", "daemon off -g;"]
+ADD sample-1.tar /tmp/
+CMD ["nginx", "-g", "daemon off;"]
