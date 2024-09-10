@@ -17,6 +17,8 @@ docker images -a -q ==> to see all docker images
 
 docker rmi `docker images -a -q` ==> to delete the all docker images
 
+docker rm -f `docker ps -a -q` ==> to delete the all running containers forcefully.
+
 docker create nginx:latest ==> to create the container
 
 docker start CONTAINER ID ==> to start the container
@@ -24,6 +26,26 @@ docker start CONTAINER ID ==> to start the container
 docker ps -a ==> to see all containers
 
 docker exec -it 80555cba63f0 bash ==> to login to the container
+
+
+
+docker login
+Username: vvkr
+password:jan!725123
+
+once successfully logged into the docker we can push our own build docker images to docker hub.
+
+docker build -t from:v1 . ==> it will build the docker image locally
+
+docker tag from:v1 vvkr/from:v1 ==> retag the image to push docker hub
+
+docker push vvkr/from:v1 ==> it will push our image to docker, here by default docker hub will take else another repositart url.
+
+docker images --filter label=TRAINER=Sivakumar ==> to filter the exact image in all images.
+
+docker ps -a --no-trunc ==>command is used to list all Docker containers, both running and stopped, with detailed information that isn't truncated.
+
+
 
 
 
