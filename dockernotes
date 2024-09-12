@@ -45,6 +45,9 @@ docker images --filter label=TRAINER=Sivakumar ==> to filter the exact image in 
 
 docker ps -a --no-trunc ==>command is used to list all Docker containers, both running and stopped, with detailed information that isn't truncated.
 
+docker build -t arg1:v1 . --build-arg username=krishna --build-arg course=devops --build-arg trainer=krishna ==> arg practice
+
+
 
 
 
