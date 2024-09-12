@@ -6,9 +6,9 @@ cd /c/Users/kreddyv1/krishna/devops/docker/docker-roboshop
 
 git init
 
-git branch -m main
+git branch -M main
 
-git remote add orgin https://github.com/krishnareddy725/Docker-roboshop.git
+git remote add origin https://github.com/krishnareddy725/Docker-roboshop.git
 
 git remote -v ==> to verify where we are push and pull the data from local to repo
 
