@@ -1,0 +1,18 @@
+Create new repositary `docker-roboshop` in github
+
+git bash commands
+=================
+cd /c/Users/kreddyv1/krishna/devops/docker/docker-roboshop
+
+git init
+
+git branch -m main
+
+git remote add orgin https://github.com/krishnareddy725/Docker-roboshop.git
+
+git remote -v ==> to verify where we are push and pull the data from local to repo
+
+git config --list ==> to verfy target git repo is added.
+
+git add .;git commit -m "docker";git push origin main ==> to push the data from local to git repo.
+
