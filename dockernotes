@@ -47,6 +47,30 @@ docker ps -a --no-trunc ==>command is used to list all Docker containers, both r
 
 docker build -t arg1:v1 . --build-arg username=krishna --build-arg course=devops --build-arg trainer=krishna ==> arg practice
 
+docker run -d --name mongodb mongodb:v1 ==> creating the container with name
+
+docker logs containername ==> to check the container logs
+
+docker inspect containername/id ==> to see ip address/ volume of the container
+
+docker network create roboshop ==> to create the own network for each project.
+
+docker network ls ==> to check the docker networks
+
+docker run -d --name mongodb --network=roboshop mongodb:v1 ==> to create the container with name and also attach the network.
+
+docker run -d -p 8080:80 --name web --network=roboshop web:v1 ==> opening the port to web and also attching to roboshop network.
+
+docker compose installation
+===========================
+sudo curl -L "https://github.com/docker/compose/releases/download/v2.20.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+docker-compose --version
+docker-compose.yaml ==> is the default file
+
+docker-compose up -d ==> to create all containers at a time by useing compose
+
+docker-compose down ==> to bring down all running containers
 
 
 
